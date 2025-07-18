@@ -164,14 +164,24 @@ const saveAccount = (account: NewAccount) => {
 
 <template>
     <h1>Учетные записи</h1>
-    <button v-on:click="addNewAccount" class = "btn btn-primary">
-        +
-    </button>
-    <span>
-        Для указания нескольких меток для одной пары логин/пароль используйте разделитель:
-    </span>
+    <div class="d-flex gap-3 align-items-center pb-3">
+        <button v-on:click="addNewAccount" class = "btn btn-primary" type="button">
+            +
+        </button>
+        <span class = "col-10">
+            Добавьте нового пользователя
+        </span>
+    </div>
+    
+    <div class="d-flex gap-3 pb-3">
+        <i class="material-icons md-dark">help</i>
+        <span>
+            Для указания нескольких меток для одной пары логин/пароль используйте разделитель:
+        </span>
+    </div>
+    
 
-    <div class = "row">
+    <div class = "row pt-3">
         <div class="col-2">
             <span>Метки</span>
         </div>
@@ -213,7 +223,7 @@ const saveAccount = (account: NewAccount) => {
         
         
         <button v-on:click="removeAccount(account.id)" class = "btn btn-primary col-2">
-            Удалить
+            <i class="material-icons md-dark">delete</i>
         </button>
     </div>
 </template>

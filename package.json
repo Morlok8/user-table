@@ -14,7 +14,8 @@
     "bootstrap": "^5.3.7",
     "bootstrap-vue": "^2.23.1",
     "pinia": "^3.0.3",
-    "vue": "^3.5.17"
+    "vue": "^3.5.17",
+    "vue-material-design-icons": "^5.3.1"
   },
   "devDependencies": {
     "@tsconfig/node22": "^22.0.2",
